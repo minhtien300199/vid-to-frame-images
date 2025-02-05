@@ -1,2 +1,18 @@
 /.venv
 /venv
+
+# Ignore frame output folders
+static/frames_*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+env/
+.env/
+
+# Uploads folder
+uploads/
