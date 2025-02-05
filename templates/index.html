@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Frame Extractor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Video Frame Extractor</h1>
+
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        {% for message in messages %}
+        <div class="alert">{{ message }}</div>
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
+
+        <form method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="video">Select Video File:</label>
+                <input type="file" id="video" name="video" accept=".mp4,.avi,.mov,.mkv" required>
+            </div>
+
+            <div class="form-group">
+                <label for="frame_count">Number of Frames to Extract:</label>
+                <input type="number" id="frame_count" name="frame_count" min="1" required>
+            </div>
+
+            <div class="form-group">
+                <label for="interval">Interval between Frames (milliseconds):</label>
+                <input type="number" id="interval" name="interval" min="1" required>
+            </div>
+
+            <button type="submit">Extract Frames</button>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+[Role] Expert in Software Development
+
+[Task] Improve a Python Flask Application Prompt
+
+[Context] Technical Development of a Video Processing Application
+
+[Output Requirements]
+- **Format**: Bullet points
+- **Type**: Detailed list
+- **Length**: Sufficiently comprehensive to cover all aspects of the application requirements
+- **Style**: Clear, concise, and easy to understand
+- **Structure**: Organized into distinct sections for clarity
+
+**Application Overview**
+- Develop a Python application using Flask.
+- The application will allow users to upload a video file.
+- The application will extract frame images from the video based on user-defined parameters.
+
+**User Input Requirements**
+- **Video Input**: Provide functionality for users to upload video files.
+- **Frame Extraction Count**: 
+  - User specifies the total number of frames to extract.
+  - Example: If the user inputs `10`, the application will extract 10 frames.
+- **Frame Interval**: 
+  - User specifies the time interval between frames in milliseconds.
+  - Example: If the user inputs `100`, the application will extract a frame every 100 milliseconds.
+
+**Output Specifications**
+- Each extracted frame image will be saved in a specific folder.
+- The folder will be named with the current date and time (e.g., `frames_YYYYMMDD_HHMMSS`).
+- Each frame will be numbered sequentially starting from 1.
+- Example: The images will be named `frame_1.jpg`, `frame_2.jpg`, ..., up to the specified number of frames.
+
+**Error Handling**
+- Implement checks for valid video file uploads.
+- Ensure the user input for frame count and interval is a positive integer.
+- Provide user-friendly error messages for invalid inputs.
+
+[Evaluation Criteria]
+- **Accuracy**: The application must correctly implement the specified functionalities.
+- **Clarity**: The user interface must be intuitive, guiding users through the video upload and input processes.
+- **Practicality**: The application should perform efficiently, even with larger video files, and the frame extraction should occur without significant delays.
+
+[Constraints]
+- Use simple and accessible language throughout the application.
+- Limit technical jargon to essential terms only; provide explanations where necessary.
+- Ensure all requirements are specific and actionable, providing clear instructions on how to interact with the application.
+- Maintain a focus on the key requirements, ensuring that the application meets user needs effectively.

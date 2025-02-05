@@ -1,0 +1,4 @@
+A project should stick to following constraints:
+- Consistence code and structure
+- do not remove comment
+- do not remove or modify the code that is already provided and only make the change if necessary
